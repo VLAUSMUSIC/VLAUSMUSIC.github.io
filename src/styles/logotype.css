@@ -1,0 +1,9 @@
+.logotype {
+    width: 50%;
+}
+
+.logotype__text {
+    font-family: 'Monoton';
+    font-size: 50px;
+    color: #000;
+}

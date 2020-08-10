@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 45vh auto 0 auto;
+}
+
+@font-face {
+    font-family: 'Monoton';
+    src: url("../assets/fonts/Monoton-Regular.ttf") format('truetype');
+}
