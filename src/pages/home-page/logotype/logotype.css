@@ -1,0 +1,28 @@
+.logotype {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    margin: 15px 25px;
+
+    animation: logotype 2.5s ease-out;
+}
+
+.logotype__link {
+    text-decoration: none;
+}
+
+.logotype__text {
+    font-family: 'Monoton';
+    font-size: 60px;
+    color: #000;
+    cursor: pointer;
+}
+
+@keyframes logotype {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}

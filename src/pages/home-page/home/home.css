@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Monoton';
+    src: url("@/assets/fonts/Monoton-Regular.ttf") format('truetype');
+}
+
+.container__inner {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+
