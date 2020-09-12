@@ -1,0 +1,16 @@
+.albums {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+.album_item {
+    border-radius: 50%;
+}
+
+.album_poster {
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #8d2a32
+}

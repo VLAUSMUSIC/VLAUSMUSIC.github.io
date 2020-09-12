@@ -3,9 +3,11 @@
     src: url("@/assets/fonts/Monoton-Regular.ttf") format('truetype');
 }
 
-.container__inner {
+.main-container {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
 }
 
+.container__inner {
+    display: grid;
+}

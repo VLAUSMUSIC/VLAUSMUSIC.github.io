@@ -1,10 +1,10 @@
-import '@/pages/home-page/home/home.css';
-import { Albums } from '@/pages/home-page/albums-links/albums-links';
-import { Logotype } from '@/pages/home-page/logotype/logotype';
+import { Albums } from '@/pages/home-page/components/albums-links/albums-links';
+import { Logotype } from '@/pages/home-page/components/logotype/logotype';
 import kazhdomu_svoyo from '@/assets/images/albums-images/kazhdomu-svoyo/kazhdomu-svoyo.jpg';
+import '@/pages/home-page/home/home.css';
 import React from 'react';
 
-const albums = [
+const ALBUMS = [
     {
         id: 1,
         title: 'Каждому своё',
@@ -14,8 +14,8 @@ const albums = [
     },
     {
         id: 2,
-        title: '2',
-        link: '2',
+        title: 'test',
+        link: 'test',
         release_date: '2020-07-20',
         poster_path: kazhdomu_svoyo
     },
@@ -43,8 +43,10 @@ const albums = [
 ];
 
 export const Home = () => (
-    <div className="container__inner">
-        <Logotype />
-        <Albums albums={albums} />
+    <div className='main-container'>
+         <div className="container__inner">
+            <Logotype />
+            <Albums albums={ALBUMS} />
+        </div>
     </div>
 );
