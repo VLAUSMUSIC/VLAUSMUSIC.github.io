@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import '@/pages/album-info/components/kazhdomu-svoyo/kazhdomu-svoyo.css'
 import kazhdomu_svoyo from '@/assets/images/albums-images/kazhdomu-svoyo/kazhdomu-svoyo.jpg';
 import { SocialLinks } from '@/pages/album-info/components/components/social-links/social-links';
@@ -6,7 +6,7 @@ import { PlatformLinks } from '@/pages/album-info/components/components/platform
 import notes from '@/assets/images/icons/music.png';
 import { MetaImage } from '../components/meta-image/meta-image';
 
-const KazhdomuSvoyo = () => {
+const KazhdomuSvoyoComponent = () => {
 
     return (
         <div className="background-image">
@@ -44,4 +44,4 @@ const KazhdomuSvoyo = () => {
     )
 };
 
-export default KazhdomuSvoyo;
+export const KazhdomuSvoyo = memo(KazhdomuSvoyoComponent);
