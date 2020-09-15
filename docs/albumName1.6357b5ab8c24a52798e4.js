@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0,5],{11:function(e,n,a){"use strict";a.r(n),a.d(n,"MetaImage",(function(){return i}));var t=a(0),c=a.n(t),i=(a(31),Object(t.memo)((function(e){var n=e.image;return c.a.createElement("img",{className:"meta-image",src:n,alt:""})})))},31:function(e,n,a){}}]);

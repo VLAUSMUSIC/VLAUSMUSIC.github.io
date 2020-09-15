@@ -6,7 +6,7 @@ import { useParams } from 'react-router';
 export const AlbumInfo = () => {
     const { albumName } = useParams();
     const AlbumInfoPage = loadable(
-        () => import(
+        () => import(/* webpackChunkName: "albumName" */
             `@/pages/album-info/components/${albumName}/${albumName}`
             )
     );

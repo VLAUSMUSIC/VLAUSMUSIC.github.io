@@ -92,7 +92,7 @@ module.exports = {
     hot: isDev,
     open: true,
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
   },
   devtool: isDev ? 'source-map' : '',
   plugins: plugins(),

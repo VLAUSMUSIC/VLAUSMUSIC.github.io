@@ -62,11 +62,6 @@ table {
     cursor: pointer;
     box-shadow: 0 0 2px 2px #8d2a32
 }
-@font-face {
-    font-family: 'Monoton';
-    src: url(7dedae9293901010ebba8047b4e662e1.ttf) format('truetype');
-}
-
 .main-container {
     display: grid;
     height: 100vh;
@@ -76,3 +71,17 @@ table {
     display: grid;
 }
 
+@font-face {
+    font-family: 'Monoton';
+    src: url(7dedae9293901010ebba8047b4e662e1.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(88fc6c5b10cd8b2781cb2337f5d5cf15.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Yeseva';
+    src: url(eba55a4689d3aa65d33f108607a41506.ttf) format('truetype');
+}
