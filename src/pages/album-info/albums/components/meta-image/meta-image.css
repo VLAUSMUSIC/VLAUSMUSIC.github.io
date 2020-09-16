@@ -1,0 +1,17 @@
+.meta-image {
+    max-width: 32px;
+    max-height: 32px;
+    animation: meta-image 2.5s ease-in-out infinite;
+}
+
+@keyframes meta-image {
+    0% {
+        transform: translate(0, 0%);
+    }
+    50% {
+        transform: translate(0, -20%);
+    }
+    100% {
+        transform: translate(0, 0%);
+    }
+}
