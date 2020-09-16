@@ -44,4 +44,4 @@ const KazhdomuSvoyoComponent = () => {
     )
 };
 
-export const KazhdomuSvoyo = memo(KazhdomuSvoyoComponent);
+export default memo(KazhdomuSvoyoComponent);

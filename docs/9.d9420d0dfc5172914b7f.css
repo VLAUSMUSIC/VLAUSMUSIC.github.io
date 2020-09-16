@@ -1,0 +1,56 @@
+.background-image {
+    padding: 10px 0;
+    background-image: url(41e60ba26c6cbc487dd8259d3d8204d1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.info__poster img {
+    display: block;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.info__meta {
+    padding: 15px 35px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-family: 'Yeseva';  
+}
+
+.info__text {
+    animation: opacity 2s ease;
+}
+
+.singer {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.track-name {
+    font-size: 18px;
+    font-style: italic;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
