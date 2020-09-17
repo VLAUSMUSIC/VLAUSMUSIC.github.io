@@ -58,7 +58,7 @@ const jsLoaders = () => {
 const plugins = () => {
   const base = [
     new HTMLWebpackPlugin({
-      template: '../index.html',
+      template: 'index.html',
       minify: {
         collapseWhitespace: isProd
       }

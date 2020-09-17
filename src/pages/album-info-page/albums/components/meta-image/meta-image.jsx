@@ -1,6 +1,4 @@
-import { memo } from "react";
-
-import React from 'react';
+import React, { memo } from 'react';
 import './meta-image.css'
 
 const MetaImageComponent = ({ image }) => (
