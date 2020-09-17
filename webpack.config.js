@@ -58,7 +58,7 @@ const jsLoaders = () => {
 const plugins = () => {
   const base = [
     new HTMLWebpackPlugin({
-      template: './index.html',
+      template: '../index.html',
       minify: {
         collapseWhitespace: isProd
       }
@@ -91,8 +91,10 @@ module.exports = {
     port: 4200,
     hot: isDev,
     open: true,
-    historyApiFallback: true,
     contentBase: './',
+    historyApiFallback: {
+      rewrites: [{ from: /\//, to: '/404.html' }],
+    },
   },
   devtool: isDev ? 'source-map' : '',
   plugins: plugins(),
