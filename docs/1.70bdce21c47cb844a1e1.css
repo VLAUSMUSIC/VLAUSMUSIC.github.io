@@ -1,3 +1,20 @@
+.meta-image {
+    max-width: 32px;
+    max-height: 32px;
+    animation: meta-image 2.5s ease-in-out infinite;
+}
+
+@keyframes meta-image {
+    0% {
+        transform: translate(0, 0%);
+    }
+    50% {
+        transform: translate(0, -20%);
+    }
+    100% {
+        transform: translate(0, 0%);
+    }
+}
 .info__poster img {
     display: block;
     width: 100%;
@@ -21,7 +38,6 @@
 
 .track-name {
     font-size: 18px;
-    font-style: italic;
 }
 
 @keyframes opacity {

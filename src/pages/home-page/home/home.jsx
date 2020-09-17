@@ -42,11 +42,5 @@ const ALBUMS = [
     },
 ];
 
-export const Home = () => (
-    <div className='main-container'>
-         <div className="container__inner">
-            <Logotype />
-            <Albums albums={ALBUMS} />
-        </div>
-    </div>
-);
+export const Home = () => <Logotype />;
+{/* <Albums albums={ALBUMS} /> */}
