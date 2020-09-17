@@ -78,7 +78,8 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/index.jsx'),
   output: {
     filename: filename('js'),
-    path: path.resolve(__dirname, 'docs')
+    path: path.resolve(__dirname, 'docs'),
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -92,9 +93,7 @@ module.exports = {
     hot: isDev,
     open: true,
     contentBase: './',
-    historyApiFallback: {
-      rewrites: [{ from: /\//, to: '/404.html' }],
-    },
+    historyApiFallback: true,
   },
   devtool: isDev ? 'source-map' : '',
   plugins: plugins(),
