@@ -1,6 +1,7 @@
 .logotype {
     display: flex;
     height: 100vh;
+    overflow: hidden;
 }
 
 .logotype__vlaus {
