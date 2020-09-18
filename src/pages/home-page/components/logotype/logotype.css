@@ -1,11 +1,6 @@
 .logotype {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    font-family: 'Monoton';
-    font-size: 60px;
-    color: #000;
 }
 
 .logotype__vlaus {
@@ -15,18 +10,21 @@
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    padding-right: 5px;   
+    padding-right: 30px;
+    position: relative;   
 }
 
 .tree {
-    transform: rotate(-90deg);
-    position: fixed;
+    display: block;
+    position: absolute;
     top: 0;
-    left: 18.3%;
+    right: 0;
     z-index: 1;
 }
 
 .logotype__vlaus-text {
+    font-family: 'Monoton';
+    font-size: 60px;
     opacity: 0;
     transform: translate(-50%, 0);
     animation: moveVlaus 1s ease forwards;
@@ -43,6 +41,8 @@
                 0 -220px 70px -120px yellowgreen inset,
                 0 -280px 70px -120px gold inset;
     animation: colorChange 4s infinite alternate;
+
+    position: relative;
 }
 
 .logotype__music {
@@ -53,13 +53,38 @@
     color: #fff;
     background-color: #000;
     height: 100%;
-    padding-left: 5px;
+    padding-left: 30px;
 }
 
 .logotype__music-text {
+    font-family: 'Monoton';
+    font-size: 60px;
     opacity: 0;
     transform: translate(50%, 0);
     animation: moveMusic 1s ease forwards;
+}
+
+.play {
+    display: block;
+    position: absolute;
+    top: 49.5%;
+    left: -25px;
+    width: 55px;
+    transform: translate3d(0, -49.5%, 0);
+
+    animation: scale 2s ease infinite 5s;
+}
+
+@keyframes scale {
+    0% {
+        transform: translate3d(0, -49.5%, 0) scale(1);
+    }
+    50% {
+        transform: translate3d(0, -49.5%, 0) scale(1.2);
+    }
+    100% {
+        transform: translate3d(0, -49.5%, 0) scale(1);
+    }
 }
 
 @keyframes moveMusic {
@@ -91,4 +116,67 @@
                   0 -210px 70px -120px teal inset,
                   0 -280px 70px -120px plum inset;
     }
-  }
+}
+
+@media (max-width: 1000px) {
+    .tree {
+        width: 90%;
+    } 
+}
+
+@media (max-width: 560px) {
+    .logotype__vlaus-text {
+        font-size: 50px;
+    }
+    
+    .logotype__music-text {
+        font-size: 50px;
+    }
+
+    .tree {
+        top: 15%;
+    } 
+}
+
+@media (max-width: 480px) {
+    .logotype__vlaus-text {
+        font-size: 40px;
+    }
+    
+    .logotype__music-text {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .logotype__vlaus-text {
+        font-size: 35px;
+    }
+    
+    .logotype__music-text {
+        font-size: 35px;
+    }
+    
+    .logotype__vlaus {
+        padding-right: 20px;
+    }
+
+    .logotype__music {
+        padding-left: 20px;
+    }
+
+    .play {
+        width: 35px;
+        left: -15px;
+    }
+}
+
+@media (max-width: 310px) {
+    .logotype__vlaus-text {
+        font-size: 25px;
+    }
+    
+    .logotype__music-text {
+        font-size: 25px;
+    }  
+}

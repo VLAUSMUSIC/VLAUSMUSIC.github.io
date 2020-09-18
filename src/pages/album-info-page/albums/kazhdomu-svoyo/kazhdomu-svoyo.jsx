@@ -6,7 +6,7 @@ import { InfoBlock } from '@/pages/album-info-page/albums/components/info-block/
 
 const KazhdomuSvoyo = (props) => (
     <div className="background-image">
-        <div className="container">
+        <div className="container-block">
             <InfoBlock 
                 singer={props.singer}
                 trackName={props.trackName}
