@@ -5,7 +5,7 @@ const SINGER = 'VLAUS';
 
 export const ALBUMS = [
     {
-        id: kazhdomu-svoyo,
+        id: 'kazhdomu-svoyo',
         singer: SINGER,
         trackName: 'Каждому своё',
         images: {

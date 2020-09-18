@@ -73,7 +73,7 @@
     width: 55px;
     transform: translate3d(0, -49.5%, 0);
 
-    animation: scale 2s ease infinite 5s;
+    animation: scale 2s ease infinite 2s;
 }
 
 @keyframes scale {
