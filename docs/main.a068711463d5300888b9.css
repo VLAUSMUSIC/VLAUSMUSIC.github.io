@@ -86,10 +86,10 @@ table {
     cursor: pointer;
     background: gold;
     z-index: 2;
-    box-shadow: 0 -150px 70px -120px teal inset,
-                0 -220px 70px -120px yellowgreen inset,
-                0 -280px 70px -120px gold inset;
-    animation: colorChange 4s infinite alternate;
+    box-shadow: 0 -150px 70px 0px teal inset,
+                0 -150px 70px 0px yellowgreen inset,
+                0 -150px 70px 0px gold inset;
+    animation: colorChange 3s infinite;
 
     position: relative;
 }
@@ -237,6 +237,51 @@ table {
     height: 100vh;
 }
 
+.container_not_found {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.not_found {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;  
+}
+
+.code {
+    font-family: 'Yeseva';
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.code-text {
+    max-width: 300px;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.go-home {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: blue;
+    color: white; 
+}
+
+.go-home:hover {
+    background-color: silver;
+    color: black;
+}
 .albums {
     display: flex;
     align-items: center;

@@ -38,10 +38,10 @@
     cursor: pointer;
     background: gold;
     z-index: 2;
-    box-shadow: 0 -150px 70px -120px teal inset,
-                0 -220px 70px -120px yellowgreen inset,
-                0 -280px 70px -120px gold inset;
-    animation: colorChange 4s infinite alternate;
+    box-shadow: 0 -150px 70px 0px teal inset,
+                0 -150px 70px 0px yellowgreen inset,
+                0 -150px 70px 0px gold inset;
+    animation: colorChange 3s infinite;
 
     position: relative;
 }
