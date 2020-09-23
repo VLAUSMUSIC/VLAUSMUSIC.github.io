@@ -2,6 +2,10 @@
     display: flex;
     height: 100vh;
     overflow: hidden;
+    background-image: url('@/assets/images/icons/paper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logotype__vlaus {
@@ -18,7 +22,7 @@
 .tree {
     display: block;
     position: absolute;
-    top: 0;
+    top: 5%;
     right: 0;
     z-index: 1;
 }
@@ -69,22 +73,43 @@
     display: block;
     position: absolute;
     top: 49.5%;
-    left: -25px;
+    left: 50%;
     width: 55px;
-    transform: translate3d(0, -49.5%, 0);
+    transform: translate3d(-50%, -49.5%, 0);
 
     animation: scale 2s ease infinite 2s;
 }
 
-@keyframes scale {
+.logotype__music.moved {
+    animation: moveRight 1s ease-in-out forwards;
+}
+
+.logotype__vlaus.moved {
+    animation: moveLeft 1s ease-in-out forwards;
+}
+
+.link.moved {
+    animation: opacity .5s ease-in-out forwards;
+}
+
+@keyframes opacity {
     0% {
-        transform: translate3d(0, -49.5%, 0) scale(1);
-    }
-    50% {
-        transform: translate3d(0, -49.5%, 0) scale(1.2);
+        opacity: 1;
     }
     100% {
-        transform: translate3d(0, -49.5%, 0) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: translate3d(-50%, -49.5%, 0) scale(1);
+    }
+    50% {
+        transform: translate3d(-50%, -49.5%, 0) scale(1.2);
+    }
+    100% {
+        transform: translate3d(-50%, -49.5%, 0) scale(1);
     }
 }
 
@@ -119,6 +144,24 @@
     }
 }
 
+@keyframes moveLeft {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-120%,0);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(120%,0);
+    }
+}
+
 @media (max-width: 1000px) {
     .tree {
         width: 90%;
@@ -147,6 +190,10 @@
     .logotype__music-text {
         font-size: 40px;
     }
+
+    .play {
+        width: 45px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -168,7 +215,6 @@
 
     .play {
         width: 35px;
-        left: -15px;
     }
 }
 
@@ -179,5 +225,9 @@
     
     .logotype__music-text {
         font-size: 25px;
-    }  
+    }
+    
+    .play {
+        width: 30px;
+    }
 }
