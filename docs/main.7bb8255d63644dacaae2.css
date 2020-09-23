@@ -137,14 +137,16 @@ table {
 }
 
 .link.moved {
-    animation: opacity .5s ease-in-out forwards;
+    animation: moveUp .5s ease-in-out forwards;
 }
 
-@keyframes opacity {
+@keyframes moveUp {
     0% {
+        transform: translateY(0);
         opacity: 1;
     }
     100% {
+        transform: translateY(-120%);
         opacity: 0;
     }
 }
