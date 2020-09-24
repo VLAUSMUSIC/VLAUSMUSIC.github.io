@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from 'react';
+import React, { memo } from 'react';
 import vk from '@/assets/images/icons/vk.svg';
 import yandex from '@/assets/images/icons/yandex.png';
 import google from '@/assets/images/icons/google.png';

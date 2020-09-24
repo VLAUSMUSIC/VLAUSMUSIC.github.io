@@ -3,10 +3,10 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const isDev = process.env.NODE_ENV === 'development'
-const isProd = !isDev
+const isDev = process.env.NODE_ENV === 'development';
+const isProd = !isDev;
 
-const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
+const filename = ext => (isDev ? `[name].${ext}` : `[name].[hash].${ext}`);
 
 const cssLoaders = extra => {
   const loaders = [
@@ -14,63 +14,62 @@ const cssLoaders = extra => {
       loader: MiniCssExtractPlugin.loader,
       options: {
         hmr: isDev,
-        reloadAll: true
+        reloadAll: true,
       },
     },
-    'css-loader'
-  ]
+    'css-loader',
+  ];
 
   if (extra) {
-    loaders.push(extra)
+    loaders.push(extra);
   }
 
-  return loaders
-}
+  return loaders;
+};
 
 const babelOptions = preset => {
   const opts = {
-    presets: [
-      '@babel/preset-env'
-    ]
-  }
+    presets: ['@babel/preset-env'],
+  };
 
   if (preset) {
-    opts.presets.push(preset)
+    opts.presets.push(preset);
   }
 
-  return opts
-}
-
+  return opts;
+};
 
 const jsLoaders = () => {
-  const loaders = [{
-    loader: 'babel-loader',
-    options: babelOptions()
-  }]
+  const loaders = [
+    {
+      loader: 'babel-loader',
+      options: babelOptions(),
+    },
+  ];
 
   if (isDev) {
-    loaders.push('eslint-loader')
+    loaders.push('eslint-loader');
   }
 
-  return loaders
-}
+  return loaders;
+};
 
 const plugins = () => {
   const base = [
     new HTMLWebpackPlugin({
       template: 'index.html',
       minify: {
-        collapseWhitespace: isProd
-      }
+        collapseWhitespace: isProd,
+      },
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: filename('css')
-    })
-  ]
+      filename: filename('css'),
+    }),
+  ];
 
-  return base
-}
+  return base;
+};
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -86,7 +85,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@@': path.resolve(__dirname, 'src/components'),
-    }
+    },
   },
   devServer: {
     port: 4200,
@@ -101,29 +100,29 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: cssLoaders()
+        use: cssLoaders(),
       },
       {
         test: /\.(png|jpg|svg|gif)$/,
-        use: ['file-loader']
+        use: ['file-loader'],
       },
       {
         test: /\.(ttf|woff|woff2|eot)$/,
-        use: ['file-loader']
+        use: ['file-loader'],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: jsLoaders()
+        use: jsLoaders(),
       },
       {
         test: /\.jsx$/,
         exclude: /node_modules/,
         loader: {
           loader: 'babel-loader',
-          options: babelOptions('@babel/preset-react')
-        }
-      }
-    ]
-  }
-}
+          options: babelOptions('@babel/preset-react'),
+        },
+      },
+    ],
+  },
+};

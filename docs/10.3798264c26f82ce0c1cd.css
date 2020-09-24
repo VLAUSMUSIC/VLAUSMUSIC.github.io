@@ -1,6 +1,6 @@
 .background-image {
   padding: 10px 0;
-  background-image: url('@/assets/images/albums-images/kazhdomu-svoyo/kazhdomu-svoyo-blur.jpg');
+  background-image: url(/03e61eeb94dc3a42dd6eac87a61c3dd6.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,3 +15,4 @@
   background-color: white;
   border-radius: 15px;
 }
+

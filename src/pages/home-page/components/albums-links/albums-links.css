@@ -1,66 +1,64 @@
 .albums {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    height: 100vh;
-    background-image: url('@/assets/images/icons/paper.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  height: 100vh;
+  background-image: url('@/assets/images/icons/paper.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .album__item {
-    max-width: 150px;
-    max-height: 300px;
-    padding: 25px;
-    text-decoration: none;
-    color: black;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    animation: album-item-initial .5s ease-in-out forwards;
+  max-width: 120px;
+  max-height: 300px;
+  padding: 2px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: album-item-initial 0.5s ease-in-out forwards;
 }
 
 .album__item:hover .album__poster {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .album__item:hover .album__item {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .album__item:not(:first-child) {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .album__poster {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 2px 2px #8d2a32;
-    display: block;
-    overflow: hidden;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px #8d2a32;
+  display: block;
+  overflow: hidden;
 }
 
 .album__name {
-    margin-top: 5px;
-    font-size: 20px;
-    font-family: 'Yeseva';
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: 'Yeseva';
 }
 
 @keyframes album-item-initial {
-    0% {
-        opacity: 0;
-        transform: translateY(5px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
