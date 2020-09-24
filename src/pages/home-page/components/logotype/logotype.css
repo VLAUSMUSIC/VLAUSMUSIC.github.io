@@ -9,7 +9,7 @@
 }
 
 .logotype__vlaus {
-    width: 49.75%;
+    width: 50%;
     display: inline-flex;
     background-color: #fff;
     justify-content: flex-end;
@@ -17,6 +17,7 @@
     height: 100%;
     padding-right: 30px;
     position: relative;   
+    z-index: 2;
 }
 
 .tree {
@@ -24,7 +25,7 @@
     position: absolute;
     top: 5%;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logotype__vlaus-text {
@@ -36,22 +37,25 @@
 }
 
 .link {
-    width: 0.5%;
+    width: 5px;
     display: inline-flex;
     height: 100%;
     cursor: pointer;
-    background: gold;
-    z-index: 2;
-    box-shadow: 0 -150px 70px 0px teal inset,
-                0 -150px 70px 0px yellowgreen inset,
-                0 -150px 70px 0px gold inset;
+    z-index: 3;
+    box-shadow: 
+        0 -50px 70px 0px teal inset, 
+        0 -50px 70px 0px yellowgreen inset,
+        0 -50px 70px 0px gold inset, 
+        0 -50px 70px 0px red inset, 
+        0 -50px 70px 0px white inset;
     animation: colorChange 3s infinite;
-
-    position: relative;
+    top: 0;
+    right: 0;
+    position: absolute;
 }
 
 .logotype__music {
-    width: 49.75%;
+    width: 50%;
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
@@ -59,6 +63,7 @@
     background-color: #000;
     height: 100%;
     padding-left: 30px;
+    z-index: 1;
 }
 
 .logotype__music-text {
@@ -76,7 +81,7 @@
     left: 50%;
     width: 55px;
     transform: translate3d(-50%, -49.5%, 0);
-
+    z-index: 2;
     animation: scale 2s ease infinite 2s;
 }
 
@@ -89,18 +94,7 @@
 }
 
 .link.moved {
-    animation: moveUp .5s ease-in-out forwards;
-}
-
-@keyframes moveUp {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-120%);
-        opacity: 0;
-    }
+    animation: moveLeft 1s ease-in-out forwards;
 }
 
 @keyframes scale {

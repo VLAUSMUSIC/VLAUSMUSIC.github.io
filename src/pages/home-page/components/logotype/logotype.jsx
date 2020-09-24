@@ -29,9 +29,9 @@ export const Logotype = () => {
                     VLAUS
                 </div>
                 <img className="tree" src={tree} alt="tree"/>
-            </div>
-            <div className="link" onClick={goToAlbums}>
-                <img className="play" src={play} alt="play"/>
+                <div className="link" onClick={goToAlbums}>
+                    <img className="play" src={play} alt="play"/>
+                </div>
             </div>
             <div className='logotype__music'>
                 <div className='logotype__music-text'>
