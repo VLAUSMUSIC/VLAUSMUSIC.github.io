@@ -1,6 +1,7 @@
 .info__poster img {
   display: block;
   width: 100%;
+  border-radius: 20px;
 }
 
 .info__meta {
@@ -10,7 +11,8 @@
   align-items: center;
   background-color: #f2f2f2;
   font-family: 'Yeseva';
-  animation: opacity 2s ease;
+  border-radius: 20px;
+  margin: 5px 0;
 }
 
 .singer {
@@ -21,14 +23,5 @@
 
 .track-name {
   font-size: 18px;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 

@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { SocialLinks } from '@/pages/album-info-page/albums/components/social-links/social-links';
 import vk from '@/assets/images/icons/vk.svg';
 import yandex from '@/assets/images/icons/yandex.png';
 import google from '@/assets/images/icons/google.png';
@@ -129,6 +130,8 @@ const PlatformLinksComponent = ({
         </a>
       </div>
     ) : null}
+
+    <SocialLinks />
   </div>
 );
 

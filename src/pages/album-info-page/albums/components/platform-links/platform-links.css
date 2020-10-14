@@ -1,7 +1,9 @@
 .links {
   width: 100%;
-  padding: 10px;
+  padding: 10px 15px 0 15px;
   font-family: 'Oswald';
+  background-color: white;
+  border-radius: 20px;
 }
 
 .links__item {
@@ -10,7 +12,7 @@
   align-items: center;
   flex-wrap: wrap;
   opacity: 0;
-  transform: translate(-50%, 0);
+  transform: translate3d(-50%, 0, 0);
 }
 
 .links__item:nth-child(1) {
@@ -98,7 +100,7 @@
 }
 
 .link__button:hover {
-  transform: translate(0, -5%);
+  transform: translate3d(0, -5%, 0);
 }
 
 .link__button::after {
@@ -114,7 +116,7 @@
     rgba(255, 255, 255, 0.5) 50%,
     rgba(229, 172, 142, 0)
   );
-  transform: rotateZ(60deg) translate(-5em, 7.5em);
+  transform: rotateZ(60deg) translate3d(-5em, 7.5em, 0);
 }
 
 .link__button:hover::after {
@@ -127,14 +129,14 @@
 
 @keyframes link-button {
   100% {
-    transform: rotateZ(60deg) translate(1em, -9em);
+    transform: rotateZ(60deg) translate3d(1em, -9em, 0);
   }
 }
 
 @keyframes links-item {
   100% {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import '@/pages/album-info-page/albums/kazhdomu-svoyo/kazhdomu-svoyo.css';
-import { SocialLinks } from '@/pages/album-info-page/albums/components/social-links/social-links';
 import { PlatformLinks } from '@/pages/album-info-page/albums/components/platform-links/platform-links';
 import { InfoBlock } from '@/pages/album-info-page/albums/components/info-block/info-block';
 
@@ -24,7 +23,6 @@ const KazhdomuSvoyo = props => (
         anghamiLink={props.platforms.anghamiLink}
         napsterLink={props.platforms.napsterLink}
       />
-      <SocialLinks />
     </div>
   </div>
 );

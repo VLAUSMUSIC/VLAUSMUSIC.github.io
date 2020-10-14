@@ -32,7 +32,7 @@
   font-family: 'Monoton';
   font-size: 60px;
   opacity: 0;
-  transform: translate(-50%, 0);
+  transform: translate3d(-50%, 0, 0);
   animation: moveVlaus 1s ease forwards;
 }
 
@@ -67,7 +67,7 @@
   font-family: 'Monoton';
   font-size: 60px;
   opacity: 0;
-  transform: translate(50%, 0);
+  transform: translate3d(50%, 0, 0);
   animation: moveMusic 1s ease forwards;
 }
 
@@ -109,10 +109,10 @@
 @keyframes moveMusic {
   from {
     opacity: 0;
-    transform: translate(50%, 0);
+    transform: translate3d(50%, 0, 0);
   }
   to {
-    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -120,10 +120,10 @@
 @keyframes moveVlaus {
   from {
     opacity: 0;
-    transform: translate(-50%, 0);
+    transform: translate3d(-50%, 0, 0);
   }
   to {
-    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -138,19 +138,19 @@
 
 @keyframes moveLeft {
   0% {
-    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate(-120%, 0);
+    transform: translate3d(-120%, 0, 0);
   }
 }
 
 @keyframes moveRight {
   0% {
-    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate(120%, 0);
+    transform: translate3d(120%, 0, 0);
   }
 }
 
