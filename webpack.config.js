@@ -2,6 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const AutoPrefixerPlugin = require('autoprefixer');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -18,6 +19,12 @@ const cssLoaders = extra => {
       },
     },
     'css-loader',
+    {
+      loader: 'postcss-loader',
+      options: {
+          sourceMap: true
+      }
+    },
   ];
 
   if (extra) {
