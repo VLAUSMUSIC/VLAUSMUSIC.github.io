@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const AutoPrefixerPlugin = require('autoprefixer');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -18,7 +18,9 @@ const cssLoaders = extra => {
         reloadAll: true,
       },
     },
-    'css-loader',
+    {
+      loader: 'css-loader',
+    },
     {
       loader: 'postcss-loader',
       options: {
@@ -103,6 +105,12 @@ module.exports = {
   },
   devtool: isDev ? 'source-map' : '',
   plugins: plugins(),
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new CssMinimizerPlugin(),
+    ],
+  },
   module: {
     rules: [
       {

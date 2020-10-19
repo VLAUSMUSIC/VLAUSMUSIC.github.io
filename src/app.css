@@ -1,14 +1,17 @@
 @font-face {
   font-family: 'Monoton';
   src: url('@/assets/fonts/Monoton.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Oswald';
   src: url('@/assets/fonts/Oswald.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Yeseva';
   src: url('@/assets/fonts/Yeseva.ttf') format('truetype');
+  font-display: swap;
 }
