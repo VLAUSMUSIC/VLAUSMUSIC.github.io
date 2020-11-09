@@ -2,10 +2,12 @@ import React from 'react';
 import '@/pages/album-info-page/albums/kazhdomu-svoyo/kazhdomu-svoyo.css';
 import { PlatformLinks } from '@/pages/album-info-page/albums/components/platform-links/platform-links';
 import { InfoBlock } from '@/pages/album-info-page/albums/components/info-block/info-block';
+import { BackButton } from '@@/back-button/back-button'
 
 const KazhdomuSvoyo = props => (
   <div className="background-image">
     <div className="container-block">
+      <BackButton />
       <InfoBlock
         singer={props.singer}
         trackName={props.trackName}

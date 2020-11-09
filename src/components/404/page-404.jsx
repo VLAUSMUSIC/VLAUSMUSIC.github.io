@@ -8,9 +8,7 @@ export const Page404 = () => {
   const goHome = () => {
     history.replace('/');
   };
-
-  console.log(history);
-
+  
   return (
     <div className="container_not_found">
       <div className="not_found">

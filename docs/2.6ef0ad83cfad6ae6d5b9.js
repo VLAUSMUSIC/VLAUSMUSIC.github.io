@@ -1,6 +1,6 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2,4,8,9],{
 
-/***/ 11:
+/***/ 12:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15,7 +15,7 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 // CONCATENATED MODULE: ./assets/images/icons/instagram-vlaus.png
 /* harmony default export */ var instagram_vlaus = (__webpack_require__.p + "5715ac147653466aaf0600cddc2c3f0e.png");
 // EXTERNAL MODULE: ./pages/album-info-page/albums/components/social-links/social-links.css
-var social_links = __webpack_require__(33);
+var social_links = __webpack_require__(35);
 
 // CONCATENATED MODULE: ./pages/album-info-page/albums/components/social-links/social-links.jsx
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialLinks", function() { return social_links_SocialLinks; });
@@ -49,7 +49,7 @@ var social_links_SocialLinks = function SocialLinks() {
 
 /***/ }),
 
-/***/ 13:
+/***/ 14:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60,7 +60,7 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./pages/album-info-page/albums/components/social-links/social-links.jsx + 2 modules
-var social_links = __webpack_require__(11);
+var social_links = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./assets/images/icons/vk.svg
 /* harmony default export */ var vk = (__webpack_require__.p + "ae1f848a04a4647197acd673633ffc78.svg");
@@ -81,7 +81,7 @@ var social_links = __webpack_require__(11);
 // CONCATENATED MODULE: ./assets/images/icons/napster.png
 /* harmony default export */ var napster = (__webpack_require__.p + "3aa4eb6976cb61cc92cfe9a4461a9322.png");
 // EXTERNAL MODULE: ./pages/album-info-page/albums/components/platform-links/platform-links.css
-var platform_links = __webpack_require__(35);
+var platform_links = __webpack_require__(37);
 
 // CONCATENATED MODULE: ./pages/album-info-page/albums/components/platform-links/platform-links.jsx
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlatformLinks", function() { return PlatformLinks; });
@@ -216,14 +216,14 @@ var PlatformLinks = Object(react["memo"])(platform_links_PlatformLinksComponent)
 
 /***/ }),
 
-/***/ 33:
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
 
-/***/ 35:
+/***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
