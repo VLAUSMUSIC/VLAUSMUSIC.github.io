@@ -1,0 +1,16 @@
+.back-button {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 5;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.back-button img {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
