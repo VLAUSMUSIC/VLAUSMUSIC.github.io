@@ -1,0 +1,17 @@
+.background-image {
+  padding: 10px 0;
+  background-image: url('@/assets/images/albums-images/dusha-diktovala-a-ya-zapisyval/dusha-diktovala-a-ya-zapisyval-blur.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-block {
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-radius: 15px;
+}

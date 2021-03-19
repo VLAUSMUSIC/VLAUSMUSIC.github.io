@@ -6,19 +6,18 @@ import { ALBUMS } from '@/store/albums';
 import { BackHomeButton } from '@@/back-home-button/back-home-button'
 
 export const Albums = () => (
-  <div className="albums">
+  <>
     <BackHomeButton />
-    {ALBUMS.map(album => {
-      return (
-        <Link to={`/albums/${album.id}`} className="album__item" key={album.id}>
+    <div className="albums">
+      {ALBUMS.map(album => (
+        <Link to={`/albums/${album.id}`} className='album__item' key={album.id}>
           <img
             className="album__poster"
             src={album.images.image}
-            alt="poster"
+            alt={album.id}
           />
-          <div className="album__name">{album.trackName}</div>
         </Link>
-      );
-    })}
-  </div>
+      ))}
+    </div>
+  </>
 );

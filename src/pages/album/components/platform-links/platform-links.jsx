@@ -23,7 +23,7 @@ const PlatformLinksComponent = ({
   napsterLink,
 }) => (
   <div className="links">
-    {vkLink !== undefined ? (
+    {vkLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={vk} alt="" />
@@ -33,9 +33,9 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
-    {yandexLink !== undefined ? (
+    {yandexLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={yandex} alt="" />
@@ -45,9 +45,9 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
-    {googleLink !== undefined ? (
+    {googleLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={google} alt="" />
@@ -57,9 +57,9 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
-    {youtubeLink !== undefined ? (
+    {youtubeLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={youtube} alt="" />
@@ -69,9 +69,9 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
-    {appleLink !== undefined ? (
+    {appleLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={apple} alt="" />
@@ -81,9 +81,9 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
-    {spotifyLink !== undefined ? (
+    {spotifyLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={spotify} alt="" />
@@ -93,9 +93,9 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
-    {amazonLink !== undefined ? (
+    {amazonLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={amazon} alt="" />
@@ -105,9 +105,9 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
-    {anghamiLink !== undefined ? (
+    {anghamiLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={anghami} alt="" />
@@ -117,9 +117,9 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
-    {napsterLink !== undefined ? (
+    {napsterLink && (
       <div className="links__item">
         <div className="links__name">
           <img src={napster} alt="" />
@@ -129,7 +129,7 @@ const PlatformLinksComponent = ({
           Открыть
         </a>
       </div>
-    ) : null}
+    )}
 
     <SocialLinks />
   </div>
